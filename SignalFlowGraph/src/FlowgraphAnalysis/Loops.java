@@ -18,7 +18,7 @@ public class Loops {
 	 * calculate forward paths of Graph graph
 	 * 
 	 * @param graph
-	 *              to get its forward paths
+	 *            to get its forward paths
 	 * @return all forward paths of Graph graph
 	 */
 	public static Graph[] getLoops(Graph g, Node startNode, Node endNode) {
@@ -76,7 +76,7 @@ public class Loops {
 
 	private static void generatePath(Node n, Node m, Edge e) {
 		Node t = n;
-		Graph g = new Graph(); //new loop
+		Graph g = new Graph(); // new loop
 
 		while (!t.equals(m)) {
 			g.addNode(new Node(t.getID()));

@@ -12,12 +12,13 @@ public class ForwardPaths {
 	private static Graph graph;
 	private static Node start;
 	private static Node end;
+
 	/**
 	 * calculate forward paths of Graph graph
 	 * 
 	 * @param graph
 	 *            to get its forward paths
-	 * @return a  3ll forward paths of Graph graph
+	 * @return a 3ll forward paths of Graph graph
 	 */
 	public static Graph[] getForwardPaths(Graph g, Node startNode, Node endNode) {
 

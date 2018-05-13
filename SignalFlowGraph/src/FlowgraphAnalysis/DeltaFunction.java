@@ -1,4 +1,5 @@
 package FlowgraphAnalysis;
+
 import java.util.ArrayList;
 import flowGraph.*;
 
@@ -8,15 +9,16 @@ public class DeltaFunction {
 	private static Graph[] loops;
 	private static ArrayList<ArrayList<Integer>> allLoops;
 	private static double delta; // value of delta
-	
+
 	public static double getDelta(Graph path, Graph[] l, ArrayList<ArrayList<Integer>> notTouchedLoops) {
 		graph = path;
-		loops =   l;
+		loops = l;
 		allLoops = notTouchedLoops;
 		Calculate();
 
 		return delta;
 	}
+
 	private static void Calculate() {
 		delta = 1;
 		boolean t[] = new boolean[loops.length];

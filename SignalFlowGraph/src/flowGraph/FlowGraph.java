@@ -18,15 +18,16 @@ public class FlowGraph extends Graph {
 	public FlowGraph(int size) {
 		super(size);
 	}
+
 	public FlowGraph() {
 
 	}
-	
+
 	public void update() {
 		allLoops = Loops.getLoops(this, 1, nodes.size());
 		forwadPaths = ForwardPaths.getForwardPaths(this, 1, nodes.size());
 		forwardPathsDelta = new double[forwadPaths.length];
-		nonTouchedLoops =  Loops.nonTouching();
+		nonTouchedLoops = Loops.nonTouching();
 
 		for (int i = 0; i < forwadPaths.length; i++) {
 			forwardPathsDelta[i] = DeltaFunction.getDelta(forwadPaths[i], allLoops, nonTouchedLoops);
@@ -67,12 +68,13 @@ public class FlowGraph extends Graph {
 
 		overAllTransferFunction /= delta;
 	}
-	
-	////////////getters and setters
-	
+
+	//////////// getters and setters
+
 	public Graph[] getForwardPaths() {
 		return forwadPaths;
 	}
+
 	public Graph[] getAllLoops() {
 
 		return allLoops;
