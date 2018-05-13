@@ -18,7 +18,9 @@ public class FlowGraph extends Graph {
 	public FlowGraph(int size) {
 		super(size);
 	}
+	public FlowGraph() {
 
+	}
 	
 	public void update() {
 		allLoops = Loops.getLoops(this, 1, nodes.size());
