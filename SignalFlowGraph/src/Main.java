@@ -8,8 +8,6 @@ import javax.swing.ListModel;
 
 import flowGraph.FlowGraph;
 import flowGraph.Graph;
-import gui1.GraphGUI;
-
 
 
 public class Main {
