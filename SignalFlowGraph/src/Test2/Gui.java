@@ -209,13 +209,26 @@ public class Gui {
 			g.addEdge(edges.get(i).getFrom(), edges.get(i).getTo(), edges.get(i).getGain());
 		}
 		g.update();
-		flowGraph.Graph[] t = g.getAllLoops();
-		for (flowGraph.Graph gr : t) {
-			textArea.append(" " + gr + "\n");
-		}
-
-		textArea.append("Non Touching Loops :" + "\n");
+//		flowGraph.Graph[] t = g.getAllLoops();
+//		for (flowGraph.Graph gr : t) {
+//			textArea.append(" " + gr + "\n");
+//		}
 		ArrayList<ArrayList<Integer>> nonTouch = g.getNonTouchingLoops();
+		textArea.append("Forward Paths : "+"\n");
+		for(int i=0;i<g.getForwardPaths().length;i++){
+			textArea.append(g.getForwardPaths()[i].toString()+"\n");			
+		}
+		textArea.append("\n"+"========================================"+"\n");
+
+		textArea.append("Loops : "+"\n");
+		for(int i=0;i<g.getAllLoops().length;i++){
+			textArea.append("Loop Number : "+(i+1)+"\n");
+			textArea.append(g.getAllLoops()[i].toString()+"\n");
+			textArea.append("\n");
+
+		}
+		textArea.append("========================================"+"\n");
+		textArea.append("Non Touching Loops :" + "\n");
 		if (nonTouch.size() != 0) {
 			for (int i = 0; i < nonTouch.size(); i++) {
 				textArea.append(" " + "Loop Number " + (i + 1) + " :" + "\n");
@@ -230,10 +243,15 @@ public class Gui {
 			textArea.append("There is No nonTouching Loops" + "\n");
 
 		}
+		textArea.append("\n"+"========================================"+"\n");
+
 		textArea.append("Delta Value :" + "\n");
 		textArea.append(" " + String.valueOf(g.getDelta()) + "\n");
+		textArea.append("\n"+"========================================"+"\n");
+
 		textArea.append("Overall Transfer Function :" + "\n");
 		textArea.append(" " + String.valueOf(g.getOverAllTF()) + "\n");
+
 
 	}
 }
