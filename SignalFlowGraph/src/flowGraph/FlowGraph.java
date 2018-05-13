@@ -33,7 +33,7 @@ public class FlowGraph extends Graph {
 			forwardPathsDelta[i] = DeltaFunction.getDelta(forwadPaths[i], allLoops, nonTouchedLoops);
 		}
 		updateDelta();
-		updateMason();
+		updateMason();   
 	}
 
 	private void updateDelta() {

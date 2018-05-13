@@ -10,7 +10,7 @@ public class Branch {
 		To = to;
 		Gain = gain;
 	}
-	
+	  
 	public int getFrom() {
 		return From;
 	}
