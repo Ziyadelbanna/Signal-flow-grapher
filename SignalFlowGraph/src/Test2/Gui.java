@@ -15,21 +15,18 @@ import org.graphstream.graph.Edge;
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.implementations.MultiGraph;
-import org.graphstream.graph.implementations.SingleGraph;
-import org.graphstream.ui.view.Viewer;
+
 
 import Componenets.Branch;
 import flowGraph.FlowGraph;
 
 import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.GridBagLayout;
+
 
 import javax.swing.JButton;
 import javax.swing.JTextArea;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.awt.event.ActionEvent;
 
 public class Gui {
