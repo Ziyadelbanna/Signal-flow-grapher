@@ -10,9 +10,9 @@ public class Node {
 	private ArrayList<Edge> edges;// edges for the current node
 
 	private int currentIndex;// used for looping throw edges of the node
-//	private NodeGui nodeGui;
+//	private Node  Gui nodeGui;
 
-	// used inBFS
+	// used in  BFS
 	private boolean visited;
 	private Edge parent;
 

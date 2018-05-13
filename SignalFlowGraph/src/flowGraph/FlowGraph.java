@@ -26,7 +26,7 @@ public class FlowGraph extends Graph {
 		allLoops = Loops.getLoops(this, 1, nodes.size());
 		forwadPaths = ForwardPaths.getForwardPaths(this, 1, nodes.size());
 		forwardPathsDelta = new double[forwadPaths.length];
-		nonTouchedLoops = Loops.nonTouching();
+		nonTouchedLoops =  Loops.nonTouching();
 
 		for (int i = 0; i < forwadPaths.length; i++) {
 			forwardPathsDelta[i] = DeltaFunction.getDelta(forwadPaths[i], allLoops, nonTouchedLoops);
