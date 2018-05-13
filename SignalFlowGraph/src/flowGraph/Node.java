@@ -12,7 +12,7 @@ public class Node {
 	private int currentIndex;// used for looping throw edges of the node
 //	private NodeGui nodeGui;
 
-	// used in BFS
+	// used inBFS
 	private boolean visited;
 	private Edge parent;
 
