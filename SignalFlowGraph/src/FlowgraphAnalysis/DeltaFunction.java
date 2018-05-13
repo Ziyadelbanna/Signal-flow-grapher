@@ -11,7 +11,7 @@ public class DeltaFunction {
 	
 	public static double getDelta(Graph path, Graph[] l, ArrayList<ArrayList<Integer>> notTouchedLoops) {
 		graph = path;
-		loops = l;
+		loops =   l;
 		allLoops = notTouchedLoops;
 		Calculate();
 

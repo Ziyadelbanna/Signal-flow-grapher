@@ -17,7 +17,7 @@ public class ForwardPaths {
 	 * 
 	 * @param graph
 	 *            to get its forward paths
-	 * @return all forward paths of Graph graph
+	 * @return a  3ll forward paths of Graph graph
 	 */
 	public static Graph[] getForwardPaths(Graph g, Node startNode, Node endNode) {
 

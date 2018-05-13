@@ -7,10 +7,10 @@ import java.util.ArrayList;
 public class Node {
 
 	private int ID; //number of node
-	private ArrayList<Edge> edges;// edges for the current node
+	private ArrayList<Edge> edges ;// edges for the current node
 
-	private int currentIndex;// used for looping throw edges of the node
-//	private Node  Gui nodeGui;
+	private int currentIndex;// us ed for looping throw edges of the node
+//	private Node  Gui n odeGui;
 
 	// used in  BFS
 	private boolean visited;

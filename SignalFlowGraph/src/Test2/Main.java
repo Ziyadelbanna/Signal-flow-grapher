@@ -25,7 +25,7 @@ public class Main {
 		
 		g.addEdge(1,2,5);
 		g.addEdge(2,3,5);
-		g.addEdge(3,4,5);
+		g.  addEdge(3,4,5);
 		g.addEdge(4,5,5);
 		g.addEdge(3,2,5);
 		g.addEdge(4,3,5);
