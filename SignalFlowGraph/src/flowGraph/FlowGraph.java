@@ -19,10 +19,7 @@ public class FlowGraph extends Graph {
 		super(size);
 	}
 
-	public FlowGraph() {
-
-	}
-
+	
 	public void update() {
 		allLoops = Loops.getLoops(this, 1, nodes.size());
 		forwadPaths = ForwardPaths.getForwardPaths(this, 1, nodes.size());

@@ -12,7 +12,7 @@ public class ForwardPaths {
 	private static Graph graph;
 	private static Node start;
 	private static Node end;
-	/*
+	/**
 	 * calculate forward paths of Graph graph
 	 * 
 	 * @param graph
