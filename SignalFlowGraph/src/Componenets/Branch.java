@@ -6,7 +6,7 @@ public class Branch {
 	private int Gain ;
 	public Branch(int from, int to, int gain) {
 		super();
-		From = from;
+		From = from;    
 		To = to;
 		Gain = gain;
 	}

@@ -71,7 +71,7 @@ public class Gui {
 	 * Create the application.
 	 */
 	public Gui() {
-		initialize();
+		initialize();   
 	}
 
 	/**
